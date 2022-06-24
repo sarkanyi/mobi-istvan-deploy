@@ -25,6 +25,10 @@ spec:
         - containerPort: 80
         resources: {}
         imagePullPolicy: Always
+      env:
+      - name: deploy
+        value: app2
+        
 status: {}
 # adding service with nodeport
 ---
