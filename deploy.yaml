@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: istvanapp1
+  name: istvanapp1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: istvanapp1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: istvanapp1
+    spec:
+      containers:
+      - image: blotunga/istvanmobi:appv1
+        name: istvanmobi
+        ports:
+        - containerPort: 80
+        resources: {}
+status: {}
