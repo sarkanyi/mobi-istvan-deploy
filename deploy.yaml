@@ -23,11 +23,11 @@ spec:
         name: istvanmobi
         ports:
         - containerPort: 80
+        env:
+        - name: deploy
+          value: app2
         resources: {}
         imagePullPolicy: Always
-      env:
-      - name: deploy
-        value: app2
         
 status: {}
 # adding service with nodeport
