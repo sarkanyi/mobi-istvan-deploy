@@ -5,6 +5,7 @@ metadata:
   labels:
     app: istvanapp1
   name: istvanapp1
+  namespace: istvan-project
 spec:
   replicas: 1
   selector:
